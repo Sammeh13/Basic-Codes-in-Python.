@@ -10,21 +10,31 @@ print("We also call our planet", planets[2])
 print("There are", len(planets), "planets in the solar system.")
 
 #adding value to the list
-planets.append("New Planet")
+planets.append("New Planet") #adds at the end of list
 print("There are now", len(planets), "planets")
+
+#adding value on specific position
+planets.insert(0, "old planet")
+print(planets)
+
+#removing value of first occurrence
+planets.remove("old planet") #removes first occurrence
+print(planets)
 
 #using negative index
 print("The last planet is", planets[-1])
 
-#removing the last value/item from the list
-planets.pop()
-print("There are", len(planets), "planets again")
+#planets.pop(1) - specific position
+planets.pop() #removes last value/item from the list
+print("There are", len(planets), "planets")
 
 #using negative index: -1 starts at the last item
 print("The last planet is", planets[-1])
 
 #finding value in a list
 print("Mercury is the", planets.index("Mercury") + 1, "from the sun") # plus 1 since indexing starts at 0
+
+#planets.clear() - removes all values
 
 #numbers in list
 planets_g = [0.378, 0.907, 1, 0.377, 2.36, 0.916, 0.899, 1.12]
@@ -48,7 +58,50 @@ galilean = ["Io", "Europa", "Ganymede", "Callisto"]
 
 print(amalthea + galilean, "are the regular satellite moons of Jupiter") #creates new list; does not modify the current
 
-#sort lists
+#sort lists alphabetically
+#print((amalthea + galilean).sort(), "are the regular moons") = ERROR -> result to str "None"
+
+moon = amalthea + galilean
+moon.sort() #case sensitive,
+print(moon, "are the moons of Jupiter in alphabetical order")
+#.sort(reverse=True) = reverse the order
+#moon.sort(key=str.lower) -> arrange in order regardless of casing since str is converted to lower
+
+#sample application on list
+"""
+planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+planet_name = input("Enter the name of the planet").title()
+planet_index = planets.index(planet_name)
+print("The planet", planet_name, "is", planet_index, "planets away from the sun")
+print("Here are the planets closer than", planet_name)
+print(planets[0:planet_index])
+print("Here are the planets further than", planet_name)
+print(planets[planet_index+1:])
+"""
+
+sample = ["dog", "cat", "bird", "cat", "snail", "chicken"]
+print(sample)
+print(sample.count("cat")) #number of occurrence
+
+
+#slice [start included:end excluded]
+print(sample[1:4])
+
+print(len(sample)) #number of value in list
+
+print(sample[len(sample)-1])
+print(sample.count(sample[len(sample)-1]))
+#arranging in descending order: x.sort() then x.reverse()
+
+aa = [[1, 5, 6], [3, '', 4,'']] # list inside a list
+
+
+
+
+
+
+
+
 
 
 
