@@ -5,27 +5,50 @@ print(x)
 print("sam mae de jesus".upper())
 print("sam mae de jesus".lower())
 
+print("------------------------------")
+
+#double and single quotations
+print("They said, \"Oh naur\"")
+
+#indentation
+print("\towemgee")
+
+print("------------------------------")
+
 #split a str; opp: .join()
 temp = "Morning: 260 F \n Night: -280 F"
+
+print("BUG".join(temp.split(" ")))
+
+#another method for the code above
+print(temp.replace(" ", "BUG"))
+
 print(temp.split())
 
 print(temp.split('\n'))
+
+print("------------------------------")
 
 #search for a str
 print("Samantha" in "Sam Mae De Jesus")
 print("Sam" in "Sam Mae De Jesus")
 
+print("------------------------------")
+
 #position of the str
 name = "My full legal name is Samantha May Ablay De Jesus"
 print(name.find("Sophie")) #return -1 if not found
 
-name = "My full legal name is Samantha May Ablay De Jesus"
 print(name.find("May"))
+
+print("------------------------------")
 
 #returns the value of number occurrences of a str
 nn = "My nickname includes: Sam Sam, Sam, Butam, Butamtam, Sami"
 print(nn.count("Sam"))
 print(nn.count("SM"))
+
+print("------------------------------")
 
 #position/check for content in str
 temperature = "Average temperature in Mars: -60 C".split(':')
@@ -35,8 +58,10 @@ age = "I will be 19 years old next year on May 21"
 for _ in age.split():
     if _.isnumeric():
         print(_)
-# underscore can be changed to any label(part, x, y)
+# underscore can be changed to any label(e.g., part, x, y)
 # .isdecimal() - checks for str that looks like decimals
+
+print("------------------------------")
 
 #extra validations on str
 print("-60".startswith('-'))
@@ -46,7 +71,9 @@ if "30 C".endswith('C'):
 
 print("Samantha May Ablay De Jesus".replace("Ablay", "A."))
 
-# percent sign (%) formatting
+print("------------------------------")
+
+# % formatting
 #x = int(input("How old are you? "))
 x = 5
 print("You are %s years old" % x)
