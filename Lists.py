@@ -95,6 +95,22 @@ print(sample.count(sample[len(sample)-1]))
 
 aa = [[1, 5, 6], [3, '', 4,'']] # list inside a list
 
+#list and loops
+MM = ["Sam", "Mish", "Lads", "Erics"]
+
+for _ in MM:
+    print(_)
+
+#another method to print vals in list
+for name in range(len(MM)): #gets the amount of vals in list
+    print(MM[name])
+
+for name in range(len(MM)):
+    print(name + 1, MM[name])
+
+
+
+
 
 
 
