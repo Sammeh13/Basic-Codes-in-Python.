@@ -91,6 +91,12 @@ print(f"you are {x} years old")
 
 print(f"my favorite number is {round(1.2*3, 1)}")
 
+print("-----------------------")
+
+xxyy = "PUP let me out"
+print(len(xxyy))
+print(xxyy[2:6:2]) #[start, end, interval]
+
 
 
 
