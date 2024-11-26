@@ -119,4 +119,32 @@ for _ in plant_growth.values():
 
 print(f"There was a total of {total}cm growth of the plant in a span of 4 days.")
 
+print("------------------------------")
+
+planet_moons = {
+    "Mercury": 0,
+    "Venus": 0,
+    "Earth": 1,
+    "Mars": 2,
+    "Jupiter": 79,
+    "Saturn": 82,
+    "Uranus": 27,
+    "Neptune": 14,
+    "Pluto": 5,
+    "Haumea": 2,
+    "Makemake": 1,
+    "Erics": 1
+}
+
+moons = planet_moons.values()
+total_planets = len(planet_moons.keys())
+
+total_moons = 0
+for i in moons:
+    total_moons += i
+
+average = total_moons / total_planets
+
+print(f"The average of moon in our solar system is {average}")
+
 

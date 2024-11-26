@@ -21,9 +21,6 @@ print(planets)
 planets.remove("old planet") #removes first occurrence
 print(planets)
 
-#using negative index
-print("The last planet is", planets[-1])
-
 #planets.pop(1) - specific position
 planets.pop() #removes last value/item from the list
 print("There are", len(planets), "planets")

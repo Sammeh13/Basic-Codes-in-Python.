@@ -16,11 +16,31 @@ while i < 3: # i<=3 would result to 4x
 for i in [0, 1, 2]: #not practical
     print("luh")
 
-for _ in range (5):
+for _ in range (2):
     print("moew")
 
 
 print("meeowe\n" * 2, end="") #removes extra new line at the end
+
+print("---------------")
+
+print("Before the loop")
+
+for x in range(10, 0, -1):
+    print("Code Block: " + str(x))
+
+print("---------------")
+
+for x in range(5, 15, 2):
+    print("Code Block: " + str(x))
+
+print("After the loop")
+
+print("---------------")
+
+
+
+
 ''''
 while True:
     aa = int(input("How many times should I bark? "))
@@ -42,18 +62,16 @@ for _ in range(nn):
     print("meowiee")
 
 
-new_planet = ''
-planets = []
+new_names = ''
+sector_2 = []
 
-while new_planet.lower() != 'done':
-    if new_planet:
-        planets.append(new_planet)
-    new_planet = input('Enter a new planet or done if done')
+while new_names.lower() != 'done':
+    if new_names:
+        sector_2.append(new_names)
+    new_names = input('Enter your names or type done if done')
 
-for planet in planets:
-    print(planet)
-
-
+for i in sector_2:
+    print(i)
 
 
 
