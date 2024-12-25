@@ -23,6 +23,7 @@ for _ in range (2):
 print("meeowe\n" * 2, end="") #removes extra new line at the end
 
 print("---------------")
+print("hhshshshshhs")
 
 print("Before the loop")
 
@@ -74,6 +75,82 @@ for i in sector_2:
     print(i)
 
 
+
+print("-------------------NEW------------------------")
+
+for x in range(9, 0, -1):
+    print("x -> "  + str(x))
+
+fruits = ["apple", "banana", "orange", "pineapple", "grapes"]
+
+for i in fruits:
+    print(f"I love {i}")
+    for ii in range(3):
+        print("codeblock: " + str(ii))
+
+
+a = 0
+while a != 5:
+    print("HA" + str(a))
+    a+=1
+
+print("-------------------------")
+
+b = 5
+while b != -1:
+    print("Ho" + str(b))
+    b-=1
+
+name = ["Sam", "Erics", "Lads", "Carly", "Mish", "Gela", "Geliks", "Tons", "Ems"]
+c = 0
+nn = ""
+
+while nn != "Gela":
+    print(name[c])
+    nn = name[c]
+    c += 1
+
+print("///////////////////////")
+
+c = 0
+nn = ""
+
+while nn != "Gela":
+    if name[c] != "Gela":
+        print(name[c])
+    nn = name[c]
+    c += 1
+
+print("Start of first loop")
+for m in range(7):
+    print("Start of second loop")
+    for n in range(3):
+        print(f"Set m: {m} - set n: {n} ")
+    print("Exit of second loop")
+print("Exit of first loop")
+
+
+print("---------------------------")
+
+for p in range(4):
+    for q in range(2):
+        print(f"Set m: {p} - set n: {q} ")
+        break
+
+
+print("-------------------------")
+
+for g in range(4):
+    for h in range(2):
+        print(f"Set m: {g} - set n: {h} ")
+    break
+
+print("----------------------")
+
+for xy in range(10):
+    print(xy)
+    if xy % 3 == 0 and xy != 0:
+        break
 
 
 

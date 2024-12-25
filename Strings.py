@@ -5,6 +5,13 @@ print(x)
 print("sam mae de jesus".upper())
 print("sam mae de jesus".lower())
 
+print(x.split("Mae"))
+
+print(x.lower().strip("s"))
+
+print(x.lower().replace("s", "r"))
+
+
 print("------------------------------")
 
 #double and single quotations

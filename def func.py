@@ -51,5 +51,34 @@ def generate_report(main_tank, external_tank, hydrogen_tank):
 
 generate_report(80, 70, 75)
 
+#keyword arguments - must be defined in the function themselves
+
+from datetime import timedelta, datetime
+
+def arrival_time(hours=51):
+    now = datetime.now()
+    arrival = now + timedelta(hours=hours)
+    return arrival.strftime("Arrival: %A %H %M")
+
+print("-----------------")
+
+print(arrival_time())
+print(arrival_time(hours=0))
+
+#variable arguments
+
+def seq_time(*args):
+    total_mins = sum(args)
+    if total_mins < 60:
+        return f"Total time to launch is {total_mins} minutes."
+    else:
+        return f"Total time to launch is {total_mins/60} minutes."
+
+print(seq_time(4, 14, 18))
+print(seq_time(4, 14, 48))
+
+
+
+
 
 

@@ -2,11 +2,23 @@
 planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Pluto"]
 print("The first planet in the solar system is", planets[0])
 
+strSample= "Hello World"
+print(strSample[3]) #specific position of charac
+
+#slice list - extract specific portion of a list; creates new list, does not modify the current list
+print("The planets before Earth are", planets[0:2]) # first included, last excluded
+
+#slicing list w/interval
+print(planets[0:7:2])
+
+#reverse
+print(planets[::-1])
+
 #modify the list by using the index
 planets[2] = "Mother Earth"
 print("We also call our planet", planets[2])
 
-#determining the length of the list
+#length of the list
 print("There are", len(planets), "planets in the solar system.")
 
 #adding value to the list
@@ -44,10 +56,12 @@ print("On Mercury, a bus weighs", bus_weight * planets_g[0], "N")
 print("The lightest a bus would be in the solar system: ", bus_weight * min(planets_g), "N")
 print("The heaviest a bus would be in the solar system: ", bus_weight * max(planets_g), "N")
 
-#slice list - extract specific portion of a list; creates new list, does not modify the current list
-print("The planets before Earth are", planets[0:2]) # index ends before the index ending -> Earth is excluded
+print("--------------------")
 
-print("The planets after Earth are", planets[3:]) # no stop index -> continue until the end of list
+
+print("The planets after Earth are", planets[3:]) # no stop index -> continues until the end of list
+
+print("---------------------------------------")
 
 #join list: use (+) operator
 amalthea = ["Metis", "Adrastea", "Amalthea", "Thebe"]
